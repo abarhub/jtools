@@ -1,6 +1,6 @@
 package org.jtools.utils;
 
-public class StdOutputImpl implements StdOutput{
+public class StdOutputImpl implements StdOutput {
     @Override
     public void println(String message) {
         System.out.println(message);

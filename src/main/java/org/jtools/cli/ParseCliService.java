@@ -30,9 +30,9 @@ public class ParseCliService {
                 }
                 switch (commandSelected.get()) {
                     case TIMESTAMP -> {
-                        if(listParameters.size()==1){
-                            var s=listParameters.get(0);
-                            if(NumberUtils.isNumber(s)) {
+                        if (listParameters.size() == 1) {
+                            var s = listParameters.get(0);
+                            if (NumberUtils.isNumber(s)) {
                                 TimestampParameters parameters = new TimestampParameters(s);
                                 var timestamp = new TimestampCommand(new StdOutputImpl());
                                 return timestamp.run(parameters);

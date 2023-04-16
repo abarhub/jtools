@@ -1,6 +1,6 @@
 package org.jtools.cli;
 
-public class InvalidCliParametersException extends Exception{
+public class InvalidCliParametersException extends Exception {
     public InvalidCliParametersException(String message) {
         super(message);
     }
