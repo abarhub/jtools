@@ -7,7 +7,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public class StdMockOutput implements StdOutput {
 
-    private final List<Object> list=new CopyOnWriteArrayList<>();
+    private final List<Object> list = new CopyOnWriteArrayList<>();
 
 
     @Override
