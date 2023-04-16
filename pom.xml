@@ -1,0 +1,21 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.jtools.jtools</groupId>
+    <artifactId>jtools</artifactId>
+    <version>1.0.0</version>
+
+    <properties>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+    </properties>
+
+    <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>info.picocli</groupId>-->
+<!--            <artifactId>picocli</artifactId>-->
+<!--            <version>4.7.2</version>-->
+<!--        </dependency>-->
+    </dependencies>
+
+</project>
