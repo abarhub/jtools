@@ -2,14 +2,21 @@ package org.jtools;
 
 
 import org.jtools.cli.ParseCliService;
+import org.jtools.command.CheckSum;
+import picocli.CommandLine;
 
 
 public class Main {
 
     public static void main(String[] args) {
         try {
-            var parse = new ParseCliService();
-            parse.parse(args);
+            if(false) {
+                var parse = new ParseCliService();
+                parse.parse(args);
+            }else {
+                int exitCode = new CommandLine(new CheckSum()).execute(args);
+                System.exit(exitCode);
+            }
         } catch (Exception e) {
             System.err.println("Error: " + e.getMessage());
         }
