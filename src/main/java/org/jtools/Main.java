@@ -2,6 +2,7 @@ package org.jtools;
 
 
 import org.jtools.cli.ParseCliService;
+import org.jtools.command.AllCommand;
 import org.jtools.command.CheckSum;
 import picocli.CommandLine;
 
@@ -14,7 +15,7 @@ public class Main {
                 var parse = new ParseCliService();
                 parse.parse(args);
             }else {
-                int exitCode = new CommandLine(new CheckSum()).execute(args);
+                int exitCode = new CommandLine(new AllCommand()).execute(args);
                 System.exit(exitCode);
             }
         } catch (Exception e) {
